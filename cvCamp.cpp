@@ -2,7 +2,10 @@
 #include<stdio.h>
 #include<highgui.h>
 using namespace cv;
+using namespace std;
 int main(int argc,char* argv[])
 {
-	IplImage* image=cvLoadImage(argv[0],-1);
+  Mat image=imread(argv[0],-1);
+	cout<<"the image has been read!"<<endl;
+	return 0;
 }
